@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>:: position :: </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 2rem;
+    }
+    .parent {
+      background-color: darkorange;
+      padding: .25rem;
+    }
+    .parent2 {
+      background-color: darkorange;
+      padding: .25rem;
+      position: relative;
+    }
+    .child11 {
+      background-color: purple;
+      padding: .25rem;
+      position: relative;
+      z-index: 20px;
+      top: 200px;
+    }
+    .child22 {
+      background-color: deeppink;
+      padding: .25rem;
+      position: relative;
+      z-index: 10px;
+    }
+    .child33 {
+      background-color: yellow;
+      padding: .25rem;
+    }
+    .child1 {
+      background-color: #AA1111;
+      padding: .25rem;
+      /*position: sticky;*/
+      /*top: 10px;*/
+      /*z-index: -1; it will be but in the back*/
+    }
+    .child2 {
+      background-color: #00AA88;
+      padding: .25rem;
+    }
+    .child3 {
+      background-color: #7D889E;
+      padding: .25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    Parent
+    <div class="child1">One</div>
+    <div class="child2">Two</div>
+    <div class="child3">Three</div>
+  </div>
+  <div class="parent2">
+    Parent 2
+    <div class="child11">One</div>
+    <div class="child22">Two</div>
+    <div class="child33">Three</div>
+  </div>
+</body>
+</html>

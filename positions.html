@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>:: position :: </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 2rem;
+    }
+    .parent {
+      background-color: darkorange;
+      padding: .25rem;
+      position: relative;
+      margin-top: 200px;
+      /*if you take away the position relative, the child2 will go 30px away from screen top, not from parent*/
+    }
+    .child1 {
+      background-color: #AA1111;
+      padding: .25rem;
+      position: relative;
+      top: 29px;
+      /*left: 30px;  can also use right, top, bottom..etc. */
+    }
+    .child2 {
+      background-color: #00AA88;
+      padding: .25rem;
+      position: absolute;
+      top: 30px;
+      /*the element will not follow document flow.*/
+      /*top: 30px; means it will start 30px from screen top*/
+    }
+    .child3 {
+      background-color: #7D889E;
+      padding: .25rem;
+      position: fixed;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    Parent
+    <div class="child1">One</div>
+    <div class="child2">Two</div>
+    <div class="child3">Three</div>
+  </div>
+</body>
+</html>

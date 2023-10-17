@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .one {
+            z-index: 2;
+            background: blue;
+            padding: 20px;
+            width: 100px;
+            position: relative;
+        }
+
+        .two {
+            z-index: 1;
+            background: lightgreen;
+            padding: 20px;
+            width: 200px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        .container {
+            position: relative;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">Block One</div>
+        <div class="two">Block Two</div>
+    </div>
+</body>
+</html>
+
+
